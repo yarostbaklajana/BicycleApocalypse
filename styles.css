@@ -1,0 +1,283 @@
+body {	
+	margin: 0;
+}
+
+.bike-site-container {
+	min-width: 360px;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+}
+
+.bike-site-container .logo-area {
+	text-align: center;
+}
+
+.bike-site-container .logo-area hr {
+	border: none;
+	height: 2px;
+	background-color: orange;
+}
+
+.bike-site-container .logo-area figcaption {
+	line-height: 120px;
+	font-size: 72px;
+	font-family: "Apercu Mono", monospace;
+}
+
+.bike-site-container nav {
+	background-color: black;
+	position: relative;
+}
+
+.bike-site-container .menu-button {
+	width: 25%;
+	line-height: 100px;	
+	background-color: black;
+	color: white;
+	font-size: 42px;
+	background-color: black;
+	border: none;
+}
+
+.dropdown-menu {
+	position: absolute;
+	display: none;	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	z-index: 100;
+}
+
+.bike-site-container .nav-block {
+	box-sizing: border-box;
+	width: 25%;
+	text-align: center;
+	line-height: 100px;
+	background-color: black;
+}
+
+.bike-site-container .nav-block:last-child {
+	border: none;
+}
+
+.bike-site-container nav a {
+	text-decoration: none;
+	font-size: 42px;
+	color: lightgrey;
+}
+
+.bike-site-container nav:hover  ul { 	
+	display: block;
+}
+
+#main {
+	overflow: hidden;
+	height: 1080px;
+	position: relative;
+	width: 100%;
+}
+
+
+#main img {
+	position: absolute;
+	left: -400px;
+	height: 1080px;
+	opacity: 1;
+	transition: all 5s ease-in-out;
+}
+#main .hidden {
+	opacity: 0;
+}
+
+#main h1{
+	z-index: 20;
+	position: absolute;
+	left: 25px;
+	font-size: 72px;
+	color: #0E1333;
+	width: 600px;
+	text-shadow: -1px 0 white, 0 2px white, 2px 0 grey, 0 -1px grey;
+}
+
+#about {
+	box-sizing: border-box;
+	width: 100%;
+	background: url(images/lifestyle_background.png) repeat-y;
+	background-size: contain;
+}
+
+#about article {
+	background-color: white;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 92px;
+	margin: 0px 20px;
+	text-align: center;
+}
+
+.bike-site-container p, #latest-news figcaption {
+	font-size: 52px;
+	text-align: justify;
+	margin: 0px 20px;
+}
+
+#news hr, #video-bar hr {
+	border: 0;
+	height: 2px;
+	background-color: lightgrey;
+	margin: 0;
+}
+
+#news img, #latest-news img{
+	width: 100%;
+}
+
+p:first-letter, #latest-news figcaption:first-letter {
+	font-weight: bold;
+}
+
+#news .annotation {
+	color: grey;
+}
+
+#news .annotation:first-letter {
+	font-weight: normal;
+	font-size: 52px; 
+}
+
+#news ul {
+	list-style-image: url(images/bike_icon.png);
+	margin:0 20px 0 80px;
+}
+
+#news li {
+	line-height: 70px;
+	font-size: 52px;
+}
+
+#latest-news figure {
+	margin: 0;
+}
+
+
+#latest-news .expand-text {
+	font-size: 52px;
+	color:#4F8EB8;
+	text-decoration: underline;	
+}
+
+.bike-site-container video {
+	width: 100%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+#video-bar ul {
+	margin: 0;
+	list-style-image: url(images/play.png);
+	padding: 0;
+}
+
+#video-bar li {
+	margin: 20px 80px ;
+}
+
+#video-bar a {
+	font-size: 42px;
+	color: black;
+	text-decoration: none;
+}
+
+
+#video-bar a:visited {
+	color: #2C2C85;
+}
+
+#video-bar a:hover {
+	color: #7BD2E3;
+}
+
+#bike-gallery {
+	text-align: center;	
+}
+
+#bike-gallery h1 {
+	line-height: 200px;
+}
+
+#bike-gallery article {
+	box-sizing: border-box;
+	height: 400px;
+	display: block;
+	overflow: hidden;
+	width: 48%;
+	float: left;
+	margin-left: 1%;
+	margin-bottom: 1%;
+}
+
+.fix {
+	position: fixed;
+}
+
+#modal-window {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
+.closed {	
+	display: none !important;
+}
+
+#modal-window .close {
+	border: none;
+	outline: none;
+	width: 120px;
+	height: 120px;
+	background: transparent;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#modal-window .helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+#modal-window img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.bike-site-container h2 {
+	text-align: center;
+	font-size: 52px;
+	line-height: 120px;
+	margin: 0;
+}
+
+.bike-site-container footer {
+	height: 180px;
+	background-color: black;
+	color: lightgrey;
+	text-align: center;
+	line-height: 180px;
+	font-size: 52px;
+}
+
+
+
+
+
