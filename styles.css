@@ -5,7 +5,6 @@ body {
 .bike-site-container {
 	min-width: 360px;
 	font-family: "Arial", sans-serif;
-	font-size: 16px;
 }
 
 .bike-site-container .logo-area {
@@ -68,6 +67,10 @@ body {
 	color: lightgrey;
 }
 
+.bike-site-container nav a:hover {
+	color: #4EABD9;
+} 
+
 .bike-site-container nav:hover  ul { 	
 	display: block;
 }
@@ -85,7 +88,7 @@ body {
 	left: -400px;
 	height: 1080px;
 	opacity: 1;
-	transition: all 5s ease-in-out;
+	transition: opacity 5s ease-in-out;
 }
 #main .hidden {
 	opacity: 0;
@@ -105,7 +108,7 @@ body {
 	box-sizing: border-box;
 	width: 100%;
 	background: url(images/lifestyle_background.png) repeat-y;
-	background-size: contain;
+	background-size: 100%;
 }
 
 #about article {
@@ -171,7 +174,12 @@ p:first-letter, #latest-news figcaption:first-letter {
 	text-decoration: underline;	
 }
 
-.bike-site-container video {
+#latest-news .expand-text:hover {
+	cursor: pointer;
+	color: #113040;
+}
+
+#video-container video {
 	width: 100%;
 }
 
@@ -261,6 +269,80 @@ p:first-letter, #latest-news figcaption:first-letter {
 	width: 100%;
 }
 
+#feedback label {
+	margin: 10px 0px 10px 5%;
+	font-size: 52px;
+	font-weight: bold;
+	color: #5B5B5B;
+	display: block;
+}
+
+#feedback .feedback-input, #feedback .feedback-message {
+	line-height: 70px;
+	font-size: 52px;
+	height: 70px;
+	margin-left: 5%;
+	box-sizing: border-box;
+	border: 4px solid grey;
+	width: 80%;
+}
+
+#feedback .feedback-message {
+	height: 210px;
+	line-height: 210px;
+} 
+
+#feedback .feedback-radio {
+	width: 60px;
+	height: 60px;
+	margin-left: 5%;
+}
+
+#feedback span {
+	font-size: 60px;
+	margin-left: 5px;
+	font-weight: bold;
+} 
+
+#feedback .button-container {
+	text-align: right;
+	margin: 0;
+}
+
+#feedback button {
+	border: 4px solid grey;
+	width: 50%;
+	height: 70px;
+	font-size: 52px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin: 40px 15% 40px 0;
+	background: linear-gradient(white, grey);
+}
+
+#contacts h1 {
+	margin: 30px 0 0 0;
+}
+
+#contacts .contact-info {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#contacts .contact-name{
+	font-size: 52px;
+}
+
+#contacts .contact-email {
+	font-size: 52px;
+}
+
+#contacts hr {
+	border: none;
+	background-color: lightgrey;
+	height: 4px;
+}
+
 .bike-site-container h2 {
 	text-align: center;
 	font-size: 52px;
@@ -275,6 +357,404 @@ p:first-letter, #latest-news figcaption:first-letter {
 	text-align: center;
 	line-height: 180px;
 	font-size: 52px;
+}
+
+@media screen and (min-device-width: 770px) {
+	.bike-site-container .logo-area figcaption {
+		line-height: 100px;
+		font-size: 42px;
+	}
+
+	.dropdown-menu {
+		display: block;
+		position: static;
+	}
+
+	.bike-site-container .menu-button  {
+		display: none;
+	}
+
+	.bike-site-container nav {
+		position: static;
+	}
+
+	.bike-site-container .nav-block {
+		box-sizing: border-box;
+		width: 14.2857%;
+		float: left;
+		height: 70px;
+		line-height: 70px;
+		border-right: thin solid lightgrey;
+	}
+
+	.bike-site-container nav a {
+		font-size: 26px;
+	}
+
+	.bike-site-container .logo-area {
+		width: 60%;
+		margin: 20px 20% 0 20%;
+	}
+
+	.bike-site-container .logo-area img {
+		height: 200px;
+	}
+
+	#main {
+		height: 600px;
+	}
+
+	#main img {
+		width: 100%;
+		left: 0;
+		top: -200px;
+	}
+
+	#main h1 {
+		width: 100%;
+		font-size: 52px;
+		left: 0;
+		margin-left: 0;
+	}
+
+	.bike-site-container footer {
+		height: 70px;
+		line-height: 70px;
+		font-size: 26px;
+	}
+
+	#about article {
+		width: 80%;
+	}
+
+	.bike-site-container p {
+		font-size: 26px;
+		line-height: 50px;
+	}
+
+	.bike-site-container p:first-letter {
+		font-size: 32px;
+	}
+
+	.bike-site-container h1 {
+		font-size: 52px;
+	}
+
+	.bike-site-container h2 {
+		font-size: 32px;
+	}
+
+	#news {
+		margin-left: 1%;
+		width: 55%;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	#news ul {
+		list-style-image: url(images/bike_icon_little.png);
+	}
+
+	#news li {
+		font-size: 26px;
+	}
+
+	#news .annotation:first-letter {
+		font-size: 26px;
+	}
+
+	#latest-news {
+		float: right;
+		width: 35%;
+		box-sizing: border-box;
+
+	}
+
+	#latest-news hr {
+		display: none;
+	}
+
+	#latest-news span {
+		font-size: 22px;
+
+	}
+
+	#latest-news .expand-text {
+		font-size: 24px;
+	}
+
+	#latest-news figcaption {
+		line-height: 30px; 
+	}
+
+	#video-bar a {
+		font-size: 26px;
+	}
+
+	#video-bar ul {
+		list-style-image: url(images/play_little.png);
+	}
+
+	#video-container {
+		width: 60%;
+		float: left;
+		margin-left: 1%;
+	}
+
+	#video-bar {
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		background-color: black;
+		width: 38%;
+		float: right;
+		color: white;
+	}
+
+	#video-bar a {
+		color: white;
+	}
+
+	#bike-gallery  article{
+		height: 200px;
+		width: 23%;
+		margin-left: 1.555%;
+		box-shadow: 5px 5px 5px grey;
+	}
+	
+	#bike-gallery h1{
+		line-height: 100px;
+	}
+
+	#contacts .contact-info {
+		width: 50%;
+		float: left;		
+	}
+
+	#contacts .contact-info img {
+		height: 200px;
+	}
+
+	#contacts hr {
+		display: none;
+	}
+
+	#contacts .contact-name, #contacts .contact-email {
+		font-size: 32px;
+	}
+
+	#feedback {
+		background: url(images/lifestyle_background.png) repeat-y;
+		background-size: cover;
+	}
+
+	#feedback article {
+		margin: 0 auto;
+		background-color: white;
+		width: 80%;
+		text-align: center;
+	}
+
+	#feedback h1 {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	#feedback label{
+		font-size: 32px;
+	}
+
+	#feedback .feedback-input, #feedback .feedback-message {
+		height: 50px;
+		line-height: 50px;
+		font-size: 32px;
+		width: 60%;
+		border: 2px solid grey;
+	}
+
+	#feedback .feedback-message {
+		height: 200px;
+	}
+
+	#feedback .feedback-radio {
+		width: 30px;
+		height: 30px;
+	}
+
+	#feedback span {
+		font-size: 32px;
+	}
+
+	#feedback button {
+		border: 1px solid grey;
+		font-size: 32px;
+		width: 30%;
+		height: 50px;
+		padding: 0;
+	}
+
+}
+
+@media screen and (min-device-width: 1360px) {
+	.bike-site-container .logo-area {
+		width: 30%;
+		margin: 20px 35% 0 35%;
+	}
+
+	.bike-site-container .logo-area figcaption {
+		font-size: 32px;
+		line-height: 50px;
+	}
+
+	.bike-site-container .logo-area img {
+		height: 150px;
+	}
+
+	.bike-site-container nav a {
+		font-size: 22px;
+	}
+
+	.bike-site-container .nav-block {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	#main h1 {
+		text-shadow: none;
+		width: 60%;
+	}
+
+	.bike-site-container footer {
+		font-size: 22px;
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.bike-site-container p {
+		font-size: 22px;
+		line-height: 40px;
+	}
+
+	.bike-site-container p:first-letter {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	.bike-site-container h1 {
+		font-size: 32px;
+		margin: 30px 0;
+	}
+
+	.bike-site-container h2 {
+		font-size: 26px;
+		line-height: 52px;
+	}
+
+	#about article {
+		width: 60%;
+	}
+
+
+	#news {
+		width: 50%;
+		margin-left: 15%;
+	}
+
+	#latest-news {
+		width: 25%;
+	}
+
+	#news ul {
+		margin-left: 20px;
+	}
+
+	#news li {
+		font-size: 22px;
+		line-height: 40px;
+	}
+
+	#video-container {
+		width: 50%;
+		margin-left: 10%;
+	}
+
+	#video-bar {
+		width: 25%;
+	}
+
+	#video-bar a {
+		font-size: 22px;
+	}
+
+	#bike-gallery h1 {
+		line-height: 40px;
+	}
+
+	#bike-gallery article {
+		width: 15%;
+	}
+
+	#modal-window {
+		text-align: center;
+	}
+
+	#modal-window img {
+		width: auto;
+		margin: 0 auto;
+	}
+
+	#contacts .contact-info{
+		width: 30%;
+		margin-left: 3.333%;
+	}
+
+	#contacts .contact-info img {
+		height: 100px;
+	}
+
+	#contacts .contact-name, #contacts .contact-email {
+		font-size: 22px;
+	}
+
+	#feedback article {
+		width: 60%;
+	}
+
+	#feedback label {
+		font-size: 22px;
+	}
+
+	#feedback .feedback-input, #feedback .feedback-message {
+		width: 40%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 22px;
+	}
+
+	#feedback .feedback-message {
+		height: 100px;
+	}
+
+	#feedback .feedback-radio {
+		width: 20px;
+		margin-left: 10px;
+		height: 20px;		
+	}
+
+	#feedback span {
+		font-size: 22px;
+	}
+
+	#feedback .button-container {
+		margin-right: 15%;
+	}
+
+	#feedback button {
+		width: 15%;
+		border-radius: 3px;
+		height: 25px;
+		font-size: 22px;
+	}
+
 }
 
 
